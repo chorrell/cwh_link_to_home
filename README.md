@@ -1,7 +1,7 @@
 cwh_link_to_home
 ================
 
-cwh_link_to_home is a Textpattern plugin that provides replacement tag for `<txp:link_to_home />` that includes a new `format` attribute which provides the ability to set the link format as a `<link>` tag suitable for placing in the `<head>` of any page on your site. You can do this by setting the attribute `format` to _link_, like so:
+cwh_link_to_home is a [Textpattern](http://textpattern.com) plugin that provides replacement tag for `<txp:link_to_home />` that includes a new `format` attribute which provides the ability to set the link format as a `<link>` tag suitable for placing in the `<head>` of any page on your site. You can do this by setting the attribute `format` to _link_, like so:
 
 ```
 <txp:cwh_link_to_home title="Home" format="link" />
