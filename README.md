@@ -1,6 +1,23 @@
 cwh_link_to_home
 ================
 
+> **Deprecated:** this plugin doesn't work on Textpattern 4.9 (its tag isn't
+> registered, so Textpattern reports "cwh_link_to_home tag does not exist"
+> and outputs nothing), and it's no longer maintained. Core Textpattern tags
+> do the same job:
+>
+> ```html
+> <!-- Instead of <txp:cwh_link_to_home title="Home" format="link" /> -->
+> <link rel="home" title="Home" href="<txp:site_url />">
+>
+> <!-- Instead of <txp:cwh_link_to_home title="Home">Home</txp:cwh_link_to_home> -->
+> <a rel="home" title="Home" href="<txp:site_url />">Home</a>
+> ```
+>
+> The core `<txp:link_to_home>Home</txp:link_to_home>` tag also outputs a
+> `rel="home"` link and accepts `class`. The releases stay available for
+> older Textpattern versions.
+
 cwh_link_to_home is a [Textpattern](http://textpattern.com) plugin that provides replacement tag for `<txp:link_to_home />` that includes a new `format` attribute which provides the ability to set the link format as a `<link>` tag suitable for placing in the `<head>` of any page on your site. You can do this by setting the attribute `format` to _link_, like so:
 
 ```html
