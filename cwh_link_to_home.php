@@ -6,7 +6,7 @@ $plugin['author_uri'] = 'http://horrell.ca/';
 $plugin['description'] = 'A replacement tag for <txp:link_to_home /> that includes the ability to set the output format as a <link> tag.';
 
 
-$plugin['type'] = 0; 
+$plugin['type'] = 0;
 
 
 @include_once('zem_tpl.php');
@@ -39,7 +39,7 @@ Dive Into Accessibility":http://diveintoaccessibility.org/.
 // Plugin code goes here.  No need to escape quotes.
 
 
-function cwh_link_to_home($atts, $thing) 
+function cwh_link_to_home($atts, $thing)
 {
 	extract(lAtts(array(
 		'class' => false,
@@ -53,7 +53,7 @@ function cwh_link_to_home($atts, $thing)
 	$class = ($class) ? ' class="'.$class.'"' : '';
 	return '<a rel="home" title="'.$title.'" href="'.hu.'"'.$class.'>'.parse($thing).'</a>';
     }
-	
+
 	else
 	{
 		return '<link rel="home" title="'.$title.'" href="'.hu.'" />';
